@@ -88,4 +88,5 @@ function hello(a,b,c,d){
   //no of parameters in function is length of function
 }
 console.log(hello.length);
-console.dir(hello)
+console.dir(hello);
+
