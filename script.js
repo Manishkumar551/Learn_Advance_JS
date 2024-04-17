@@ -90,3 +90,17 @@ function hello(a,b,c,d){
 console.log(hello.length);
 console.dir(hello);
 
+//-----------------------------------------------------
+//synchronous and Asynchronus
+
+//line by line code runs =>Synchronus
+//if code is async nature,then move to side stack and run the next code,wait until the async code complete if it is completed move main stack and run the code.
+
+async function abcd(){
+  var blob =await fetch(`https://randomuser.me/api/`);
+  var ans=await blob.json();
+
+  console.log(ans.results[0].name);
+}
+
+abcd();
